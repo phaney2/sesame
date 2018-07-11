@@ -95,7 +95,7 @@ class SimulationWorker(QObject):
         # Equilibrium guess
         guess = solver.make_guess(system)
         # Solve Poisson equation
-        solver.common_solver('Poisson', system, guess, tol, BCs, maxiter,\
+        solver.common_solver(system, 'Poisson', guess, tol, BCs, maxiter,\
                              True, iterative, iterPrec, htpy)
 
         if solver.equilibrium is not None:
