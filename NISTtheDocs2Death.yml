@@ -1,0 +1,18 @@
+name: "Build Documentation"
+
+on: [push, pull_request, delete]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: usnistgov/NISTtheDocs2Death@0.1
+        with:
+          docs-folder: doc/
+          pages-branch: 'nist-pages'
+          pages-url: 'https://pages.nist.gov'
+          formats: ''
+          build-html-command: make html
+          build-epub-command: make epub
+          build-pdf-command: make epub
+          pre-build-command: ''
