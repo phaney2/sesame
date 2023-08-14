@@ -1,4 +1,4 @@
-Installation instructions (for experienced users)
+Installation instructions (for experienced users) 
 -------------------------------------------------
 
 This section documents how to build Sesame. 
